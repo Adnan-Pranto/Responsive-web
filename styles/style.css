@@ -1,0 +1,77 @@
+// <uniquifier>: Use a uniquifier for the class name
+// <weight>: Use a value from 100 to 900
+
+.work-sans-<uniquifier> {
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+}
+
+* {
+    font-family: "Work Sans", sans-serif;
+}
+
+/* here from now header section */
+header {
+    background: rgb(252, 238, 216);
+    padding: 50px 240px;
+}
+
+ul>li {
+    display: inline;
+    margin-right: 50px;
+}
+
+li>a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ /* Banner's text area  */
+.banar-container{
+    text-align: center;
+    max-width: 800px;
+    margin: 10px auto;
+}
+.btn-primary{
+    color: white;
+    background: tomato;
+    font-size: 1.5rm;
+    border: 0;
+    border-radius: 5px;
+    height: 50px;
+    
+}
+.banner-img img{
+    /* height: 100%; */
+    width: 100%;
+
+}
+
+/* for small device */
+@media screen and (max-width:576px) {
+    
+    .nav-bar{
+        flex-direction: column;
+    }
+    header {
+        padding: 10px;
+    }
+}
+
+/* for medium device or tablet */
+@media screen and (min-width:576px) and (max-width:990px){
+    
+    .nav-bar{
+        flex-direction: column;
+    }
+    header {
+        padding: 30px;
+    }
+}
