@@ -12,6 +12,11 @@
     font-family: "Work Sans", sans-serif;
 }
 
+/* COMMON CSS CLASS FOr Use Multiple time */
+.gray-text {
+    color: rgb(114, 114, 114);
+}
+
 /* here from now header section */
 header {
     background: rgb(252, 238, 216);
@@ -33,45 +38,173 @@ li>a {
     justify-content: space-between;
     align-items: center;
 }
- /* Banner's text area  */
-.banar-container{
+
+/* Banner's text area  */
+.banar-container {
     text-align: center;
     max-width: 800px;
     margin: 10px auto;
 }
-.btn-primary{
+
+.btn-primary {
     color: white;
     background: tomato;
     font-size: 1.5rm;
     border: 0;
     border-radius: 5px;
     height: 50px;
-    
+
 }
-.banner-img img{
+
+.banner-img img {
     /* height: 100%; */
     width: 100%;
 
 }
 
-/* for small device */
-@media screen and (max-width:576px) {
+/* second part of this web site. */
+main {
+    margin: 50px 250px;
+
+}
+
+/* 4 images in the container */
+.list-section {
+    display: flex;
+    /* justify-content: space-around; */
+}
+
+.main-grid-img {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+/* Features text color & paragraph */
+.text-container {
+    margin-left: 50px;
+    width: 60%;
+    margin-top: 200px;
+}
+
+.quick-h1 {
+    color: rgb(152, 152, 152);
+}
+
+.fet-h1 {
+    color: rgba(255, 161, 28, 0.945);
+}
+
+/* FOR Third row this side With Bid IMG */
+.second-container {
+    display: flex;
+    margin-top: 100px;
+    justify-content: space-between;
+    height: 800px;
+}
+
+.second-container>img {
     
-    .nav-bar{
+}
+    
+
+.four-container-para {
+    /* margin-right: 100px ; */
+}
+
+.border-background {
+    padding: 20px;
+    border-radius: 10px;
+    /* border: 5px solid gray; */
+    margin-top: 10px;
+    box-shadow: 0px 4px 30px 2px gainsboro;
+}
+
+/* MEDIA QUEARY SECTION */
+
+/* for small device */
+
+@media screen and (max-width:576px) {
+
+    .nav-bar,
+    .list-section,
+    .second-container,
+    .text-container {
         flex-direction: column;
     }
+
+    .text-container {
+        margin: 20px;
+    }
+
+    .main-grid-img {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
     header {
         padding: 10px;
     }
+
+    main {
+        margin: 20px;
+    }
 }
 
+
 /* for medium device or tablet */
-@media screen and (min-width:576px) and (max-width:990px){
-    
-    .nav-bar{
+
+@media screen and (min-width:576px) and (max-width:990px) {
+
+    .nav-bar,
+    .list-section,
+    .second-container,
+    .text-container {
         flex-direction: column;
     }
+
+    .text-container {
+        margin: 40px;
+    }
+
+    .main-grid-img {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
     header {
         padding: 30px;
+    }
+
+    main {
+        margin: 20px;
+    }
+}
+
+/* Laptop device */
+
+@media screen and (min-width:990px) and (max-width:1200px) {
+
+    .nav-bar,
+    .list-section,
+    .text-container {
+        flex-direction: column;
+    }
+
+    .text-container {
+        margin: 40px;
+    }
+
+    .main-grid-img {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+    }
+
+    header {
+        padding: 30px;
+    }
+
+    main {
+        margin: 20px;
     }
 }
