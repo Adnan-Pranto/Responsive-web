@@ -12,9 +12,27 @@
     font-family: "Work Sans", sans-serif;
 }
 
+.hide {
+    display: none;
+}
+
 /* COMMON CSS CLASS FOr Use Multiple time */
 .gray-text {
     color: rgb(114, 114, 114);
+}
+
+.features ,
+.sponsor {
+    margin-top: 150px;
+}
+
+.para-sponsor,
+footer {
+    text-align: center;
+
+}
+h1{
+    font-size: 3rem;
 }
 
 /* here from now header section */
@@ -63,7 +81,8 @@ li>a {
 }
 
 /* second part of this web site. */
-main {
+main,
+footer {
     margin: 50px 250px;
 
 }
@@ -87,10 +106,6 @@ main {
     margin-top: 200px;
 }
 
-.quick-h1 {
-    color: rgb(152, 152, 152);
-}
-
 .fet-h1 {
     color: rgba(255, 161, 28, 0.945);
 }
@@ -98,26 +113,76 @@ main {
 /* FOR Third row this side With Bid IMG */
 .second-container {
     display: flex;
-    margin-top: 100px;
+    margin-top: 130px;
     justify-content: space-between;
-    height: 800px;
+    height: 100%;
+    gap: 50px;
 }
 
-.second-container>img {
-    
+.design-left{
+    border-left: 5px solid #ff900E;
+   padding-left: 30px;
 }
-    
-
-.four-container-para {
-    /* margin-right: 100px ; */
-}
-
 .border-background {
     padding: 20px;
     border-radius: 10px;
     /* border: 5px solid gray; */
     margin-top: 10px;
+    background: #fff;
     box-shadow: 0px 4px 30px 2px gainsboro;
+}
+.ten-years-btn{
+    background-color: #ff900E;
+    color: #fff;
+    border-radius: 9px;
+    padding: 20px;
+    width: 280px;
+    text-align: center;
+    position: relative;
+    bottom: 100px;
+}
+.ten-years-btn > h5{
+    font-size: 2.8rem;
+    margin: 0;
+}
+.ten-years-btn > p{
+    font-size: 1.2rem;
+}
+.four-container-img> img{
+    height: 90%;
+    margin-left: 60px;
+
+}
+/* 5th Some Facts of Some Reward Section */
+.facts {
+    /* margin-top: 400px; */
+    width: 500px;
+}
+
+.rewards, .logo {
+    display: flex;
+    padding: 20px;
+    margin: 50px auto;
+    justify-content:space-around;
+    text-align: center;
+
+}
+.rewards-container > img, .rewards-container > h2{
+     margin-top: 15px;
+     
+}
+.rewards-container {
+    border: 2px solid orange;
+    border-radius: 5px;
+    width: 200px;
+    height: 200px;
+}
+
+    /* fOOTER section */
+footer {
+    margin-top: 100px;
+    background: rgb(252, 238, 216);
+    padding: 50px;
 }
 
 /* MEDIA QUEARY SECTION */
@@ -129,28 +194,55 @@ main {
     .nav-bar,
     .list-section,
     .second-container,
-    .text-container {
+    .text-container,
+    .rewards, .logo {
         flex-direction: column;
     }
-
+    ul>li{
+       margin-right: 10px;
+    }
+    .four-container-img> img{
+        width: 100%;
+        margin: 5px;
+    }
+    .ten-years-btn{
+        position: static;
+        width: 250px;
+    }
     .text-container {
         margin: 20px;
     }
-
+    .facts {
+        margin-top:20px;
+        width: 380px;
+    }
     .main-grid-img {
         grid-template-columns: 1fr;
         gap: 10px;
     }
 
-    header {
+    .rewards-container, .logo{
+        height: 100%;
+        width: 100%;
+        padding: 10px;
+        margin: 5px;
+    }
+    header,
+    footer {
         padding: 10px;
     }
 
-    main {
+    main, .logo {
         margin: 20px;
     }
-}
 
+    footer {
+        margin: 25px;
+        text-align: left;
+        padding: 20px;
+    }
+
+}
 
 /* for medium device or tablet */
 
@@ -176,8 +268,13 @@ main {
         padding: 30px;
     }
 
-    main {
+    main, ul>li {
         margin: 20px;
+    }
+
+    footer {
+        margin: 30px;
+        text-align: left;
     }
 }
 
