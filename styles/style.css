@@ -235,7 +235,11 @@ footer {
     main, .logo {
         margin: 20px;
     }
-
+    .logo> div> img{
+        height: 90px;
+        width: 210px;
+        margin-top: 40px;
+    }
     footer {
         margin: 25px;
         text-align: left;
@@ -255,21 +259,44 @@ footer {
         flex-direction: column;
     }
 
+    .logo {
+        flex-wrap: wrap;
+        gap: 25px;
+    }
+    .logo> div> img{
+        height: 60px;
+        width: 110px;
+        gap: 25px;
+    }
+
     .text-container {
         margin: 40px;
     }
-
+    .second-container{
+        margin: 20px auto;
+        width: 90%;
+    }
+    .four-container-img> img{
+        width: 100%;
+        padding: 10px;
+        margin: 0;
+    }
     .main-grid-img {
         grid-template-columns: repeat(2, 1fr);
         gap: 10px;
+       
     }
 
     header {
         padding: 30px;
     }
 
-    main, ul>li {
+    main, ul>li,
+    .features {
         margin: 20px;
+    }
+    .rewards{
+        gap: 20px;
     }
 
     footer {
@@ -280,7 +307,7 @@ footer {
 
 /* Laptop device */
 
-@media screen and (min-width:990px) and (max-width:1200px) {
+@media screen and (min-width:990px) and (max-width:1300px) {
 
     .nav-bar,
     .list-section,
@@ -300,8 +327,20 @@ footer {
     header {
         padding: 30px;
     }
+    .four-container-img> img{
+        width: 500px;
+        margin-top: 50px;
+        margin-left: 10px;
+    }
 
-    main {
+    main, .second-container {
         margin: 20px;
+    }
+    footer {
+        text-align:center;
+        padding: 50px;
+        height: 100px;
+        width: 70%;
+        margin-left: 100px;
     }
 }
